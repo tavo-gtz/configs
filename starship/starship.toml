@@ -1,0 +1,182 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+palette = 'gruvbox_dark'
+
+# ==========================================
+# Main prompt format
+# ==========================================
+command_timeout = 5000
+
+format = """
+[](firstcolor)\
+$os\
+$username\
+[](bg:secondcolor fg:firstcolor)\
+$directory\
+[](bg:thirdcolor fg:secondcolor)\
+$git_branch\
+[](bg:fourthcolor fg:thirdcolor)\
+$time\
+[](fg:fourthcolor) \
+$cmd_duration\
+$line_break\
+$character"""
+
+# ==========================================
+# OS module
+# ==========================================
+
+[os]
+disabled = false
+style = "bg:firstcolor fg:accent"
+
+[os.symbols]
+Macos = "" #  󰊠 󰄛 󰩃  󰯆  󰚌 󰀵
+
+# ==========================================
+# Username module
+# ==========================================
+
+[username]
+show_always = true
+style_user = "bg:firstcolor fg:accent"
+style_root = "bg:firstcolor fg:accent"
+format = '[ $user]($style)'
+
+# ==========================================
+# Directory module
+# ==========================================
+
+[directory]
+style = "bg:secondcolor fg:accent"
+format = "[ $path ]($style)"
+truncation_length = 8
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 Documents"
+"documents" = "󰈙 documents"
+"Downloads" = " Downloads"
+"downloads" = " downloads"
+"Pictures" = " Pictures"
+"pictures" = " pictures"
+"Development" = "󰲋 Development"
+"development" = "󰲋 development"
+
+# ==========================================
+# Git modules
+# ==========================================
+
+[git_branch]
+symbol = " "
+style = "bg:thirdcolor"
+format = '[[ $symbol $branch ](fg:accent bg:thirdcolor)]($style)'
+
+# ==========================================
+# Time module
+# ==========================================
+
+[time]
+disabled = false
+time_format = "%I:%M %p"
+style = "bg:fourthcolor"
+format = '[[  $time ](fg:accent bg:fourthcolor)]($style)'
+
+
+# ==========================================
+# Character prompt symbol module
+# ==========================================
+
+[character]
+disabled = false
+success_symbol = '[❯](bold fg:successcolor)'
+error_symbol = '[❯](bold fg:errorcolor)'
+vimcmd_symbol = '[❮](bold fg:successcolor)'
+# success_symbol = '[](bold fg:successcolor)'
+# error_symbol = '[](bold fg:errorcolor)'
+# vimcmd_symbol = '[](bold fg:successcolor)'
+
+
+# ==========================================
+# Command duration module (optional)
+# ==========================================
+
+[cmd_duration]
+show_milliseconds = true
+format = " in $duration "
+style = "bg:fourthcolor"
+disabled = true
+show_notifications = true
+min_time_to_notify = 45000
+
+# ==========================================
+# Line break
+# ==========================================
+
+[line_break]
+disabled = true
+
+# ==========================================
+# Catppuccin color palettes
+# ==========================================
+
+[palettes.catppuccin_frappe]
+firstcolor = "#e78284"
+secondcolor = "#e5c890"
+thirdcolor = "#babbf1"
+fourthcolor = "#85c1dc"
+successcolor = "#a6d189"
+errorcolor = "#e78284"
+accent = "#232634"
+
+[palettes.catppuccin_mocha]
+firstcolor = "#f38ba8"
+secondcolor = "#fab387"
+thirdcolor = "#b4befe"
+fourthcolor = "#74c7ec"
+successcolor = "#a6e3a1"
+errorcolor = "#f38ba8"
+accent = "#11111b"
+
+[palettes.catppuccin_macchiato]
+firstcolor = "#ed8796"
+secondcolor = "#f5a97f"
+thirdcolor = "#b7bdf8"
+fourthcolor = "#7dc4e4"
+successcolor = "#a6da95"
+errorcolor = "#ed8796"
+accent = "#181926"
+
+# ==========================================
+# Gruvbox color palettes
+# ==========================================
+
+[palettes.gruvbox]
+firstcolor = '#d65d0e'
+secondcolor = '#d79921'
+thirdcolor = '#689d6a'
+fourthcolor = '#458588'
+successcolor = '#98971a'
+errorcolor = '#cc241d'
+accent = '#fbf1c7'
+
+[palettes.gruvbox_dark]
+firstcolor = '#d65d0e'
+secondcolor = '#458588'
+thirdcolor = '#689d6a'
+fourthcolor = '#3c3836'
+successcolor = '#98971a'
+errorcolor = '#cc241d'
+accent = '#fbf1c7'
+
+[palettes.gruvbox_dark_purple_start]
+firstcolor = '#b16286'
+secondcolor = '#689d6a'
+thirdcolor = '#458588'
+fourthcolor = '#3c3836'
+successcolor = '#98971a'
+errorcolor = '#cc241d'
+accent = '#fbf1c7'
+
+
+
