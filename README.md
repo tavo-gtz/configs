@@ -7,8 +7,7 @@ This repository contains the config files I use to customize my terminal environ
 ## Essential Tools
 
 - **Starship**: [Customizable prompt for any shell](https://starship.rs/) 
-- **Eza**: [Command line utility that makes `ls` more user-friendly](https://github.com/eza-community/eza) 
-
+- **Eza**: [Command line utility that makes 'ls' more user-friendly](https://github.com/eza-community/eza) 
 
 ## Setup
 
