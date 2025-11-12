@@ -31,11 +31,11 @@ nano ~/.zshrc
 
 ```
 #Starship
-export STARSHIP_CONFIG="$HOME/Dev/configs/starship/starship.toml"
+export STARSHIP_CONFIG="$HOME/Development/configs/starship/starship.toml"
 eval "$(starship init zsh)"
 
 #Eza
-export EZA_CONFIG_DIR="$HOME/Dev/configs/eza"
+export EZA_CONFIG_DIR="$HOME/Development/configs/eza"
 ```
 
 3. Add the alias for ls command.
