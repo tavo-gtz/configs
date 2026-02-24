@@ -31,11 +31,11 @@ nano ~/.zshrc
 
 ```
 #Starship
-export STARSHIP_CONFIG="$HOME/Development/Configs/starship/starship.toml"
+export STARSHIP_CONFIG="$HOME/Development/Projects/configs/starship/starship.toml"
 eval "$(starship init zsh)"
 
 #Eza
-export EZA_CONFIG_DIR="$HOME/Development/Configs/eza"
+export EZA_CONFIG_DIR="$HOME/Development/Projects/configs/eza"
 ```
 
 3. Add the alias for ls command.
@@ -46,7 +46,7 @@ alias ls='eza --icons --group-directories-first'
 
 ## Uninstalling
 
-To remove starship prompt or eza simply use brew to uninstall.
+To remove starship prompt or eza, use brew to uninstall.
 ```bash
 brew uninstall starship
 ```

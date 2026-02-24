@@ -1,6 +1,6 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
-palette = 'gruvbox_dark'
+palette = 'nordic_dark'
 
 # ==========================================
 # Main prompt format
@@ -178,5 +178,55 @@ successcolor = '#98971a'
 errorcolor = '#cc241d'
 accent = '#fbf1c7'
 
+# ==========================================
+# Nordic color palettes
+# ==========================================
 
+[palettes.nordic_light]
+firstcolor = '#5a5c87'
+secondcolor = '#8384d3'
+thirdcolor = '#3babaa'
+fourthcolor = '#5082ad'
+successcolor = '#98971a'
+errorcolor = '#cc241d'
+accent = '#eeeeee'
 
+[palettes.nordic_dark]
+firstcolor = '#5a5c87'
+secondcolor = '#8384d3'
+thirdcolor = '#3babaa'
+fourthcolor = '#5082ad'
+successcolor = '#98971a'
+errorcolor = '#cc241d'
+accent = '#241e2a'
+
+[palettes.nordic_thunderstorm]
+firstcolor = '#3f4550'
+secondcolor = '#54546c'
+thirdcolor = '#6e7684'
+fourthcolor = '#5c5f79'
+successcolor = '#98971a'
+errorcolor = '#cc241d'
+accent = '#eeeeee'
+
+[palettes.nordic_storm]
+firstcolor = '#363946'
+secondcolor = '#696773'
+thirdcolor = '#819595'
+fourthcolor = '#b1b6a6'
+successcolor = '#98971a'
+errorcolor = '#cc241d'
+accent = '#241e2a'
+
+# ==========================================
+# Desert color palettes
+# ==========================================
+
+[palettes.dark_desert]
+firstcolor = '#202c39'
+secondcolor = '#283845'
+thirdcolor = '#3f4550'
+fourthcolor = '#4a4e69'
+successcolor = '#98971a'
+errorcolor = '#cc241d'
+accent = '#ff8f3f'
