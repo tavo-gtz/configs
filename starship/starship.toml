@@ -138,15 +138,6 @@ successcolor = "#a6e3a1"
 errorcolor = "#f38ba8"
 accent = "#11111b"
 
-[palettes.catppuccin_macchiato]
-firstcolor = "#ed8796"
-secondcolor = "#f5a97f"
-thirdcolor = "#b7bdf8"
-fourthcolor = "#7dc4e4"
-successcolor = "#a6da95"
-errorcolor = "#ed8796"
-accent = "#181926"
-
 # ==========================================
 # Gruvbox color palettes
 # ==========================================
@@ -169,7 +160,7 @@ successcolor = '#98971a'
 errorcolor = '#cc241d'
 accent = '#fbf1c7'
 
-[palettes.gruvbox_dark_purple_start]
+[palettes.gruvbox_dark_pink_start]
 firstcolor = '#b16286'
 secondcolor = '#689d6a'
 thirdcolor = '#458588'
