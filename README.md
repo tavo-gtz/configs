@@ -12,11 +12,11 @@ This repository contains the config files I use to customize my terminal environ
 ## Setup
 
 #### Prerequisites
-- A nerd font installed and enabled in your terminal.
+- A nerd font is installed and enabled in your terminal.
 
 #### Installation
 
-1. Install latest versions using brew.
+1. Install the latest versions using brew.
 
 ```bash
 brew install starship
@@ -55,3 +55,7 @@ brew uninstall starship
 brew uninstall eza
 ```
 Then open your shell's configuration file (e.g., ~/.zshrc). Locate and delete all lines related to the package you want to delete.
+
+
+## Available starship palettes
+![demo_starship_palettes.png](demo_starship_palettes.png)
